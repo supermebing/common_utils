@@ -54,7 +54,6 @@ abstract class TimelineInfo {
   String weeks(int week) => ''; //x week(星期x).
 
   String days(int days); //x days(x天).
-
 }
 
 class ZhInfo implements TimelineInfo {
@@ -227,6 +226,7 @@ class TimelineUtil {
     DayFormat _dayFormat = dayFormat ?? DayFormat.Common;
 
     int elapsed = _locTimeMs - ms;
+    print('🏷🏷🏷🏷🏷🏷🏷🏷🏷🏷🏷🏷🏷🏷🏷🏷🏷🏷🏷 $elapsed');
     String suffix;
     if (elapsed < 0) {
       suffix = _info.suffixAfter();
